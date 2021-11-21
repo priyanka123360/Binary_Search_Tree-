@@ -22,7 +22,7 @@ public class Binary_Search_Tree_Main {
 		binary_Tree.add(63);
 		binary_Tree.add(67);
 
-		System.out.println("Enter 1 : For inOrder Binary tree \n Enter 2 : For pre order Binary tree \n Enter 3: For post order Binary tree");
+		System.out.println("Enter 1 : For inOrder Binary tree \n Enter 2 : For pre order Binary tree \n Enter 3: For post order Binary tree \n Enter 4 : for search element");
 		Scanner scanner = new Scanner(System.in);
 		int num = scanner.nextInt();
 		switch (num) {
@@ -35,6 +35,11 @@ public class Binary_Search_Tree_Main {
 			break;
 		case 3:
 			binary_Tree.postOrder();
+			break;
+		case 4 :
+			System.out.println("Enter a Number. ");
+			int element =scanner.nextInt();
+			System.out.println(binary_Tree.search(element));
 			break;
 		default:
 			System.out.println("Enter valid Number ");
